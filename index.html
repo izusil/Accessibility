@@ -28,11 +28,11 @@
 
 			<form action="https://wp.zybooks.com/form-viewer.php" method="post">
 				<label for="name" class="required">Full Name</label>
-				<input type="text" autocomplete="name" required>
-				<label for="mail" class="required">Email</label>
-				<input type="mail" autocomplete="email" required>
+				<input type="text" autocomplete="name" id="name" required>
+				<label for="email" class="required">Email</label>
+				<input type="email" autocomplete="email" id="mail" required>
 				<label for="tel" class="required">Phone</label>
-				<input type="tel" autocomplete="tel" required>
+				<input type="tel" autocomplete="tel" id="tel" required>
 				<fieldset>
 					<legend class="required">Preferred Contact Method</legend>
 					<input id="phone" type="radio" name="contact" value="phone" checked>
@@ -41,7 +41,7 @@
 					<label for="email">Email</label>
 				</fieldset>
 				<label for="state-select" class="required">State of Residence</label>
-				<select name="state-select" required>
+				<select name="state-select" id="state-select" required>
 					<option value="" selected>--Select One--</option>
 					<option value="AL">Alabama (AL)</option>
 					<option value="AK">Alaska (AK)</option>
@@ -96,8 +96,9 @@
 					<option value="WY">Wyoming (WY)</option>
 				</select>
 				<label for="comment">Comments</label>
-	<textarea id="comment"></textarea>
+				<textarea id="comment"></textarea>
 				<input type="submit" name="submit" value="Submit">
+			</form>
 		</article>
 	</main>
 	<footer>
